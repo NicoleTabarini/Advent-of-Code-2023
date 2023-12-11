@@ -5,7 +5,6 @@ with open('Day1/input_1.txt', 'r') as file:
     lines = file.readlines()
 
 final_numbers = []
-#numbers = []
 
 for line in lines:
     numbers = []
@@ -38,8 +37,7 @@ for line in lines:
             max_num = n[0]
             max_index = n[1]
 
-    #print(line, numbers, min_num, min_index, max_num, max_index, "\n")
     final_numbers.append(int(str(min_num) + str(max_num)))
+
 print(sum(final_numbers))
 
-    #print(numbers)
