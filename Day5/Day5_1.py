@@ -28,6 +28,11 @@ for i, group_list in enumerate(separated_lists):
 seed_to_soil = pd.DataFrame(columns=["soil", "seed"])
 
 for el in mapping[names[0]]:
+
+    # this doesn't work, so get the beginning and the end of the range and check if seed is inside
+    # then do seed - beginning to find how much i had to add to the beginning of soil to get its matching number
+
+    
     print(el[0], el[1], el[2])
     range_soil = [i for i in range(el[0], el[0]+el[2])]
     range_seed = [i for i in range(el[1], el[1]+el[2])]
