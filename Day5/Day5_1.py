@@ -37,13 +37,7 @@ humindity_to_location = set()
 #print(mapping)
 
 for el in mapping[names[0]]:
-
-    # this doesn't work, so get the beginning and the end of the range and check if seed is inside
-    # then do seed - beginning to find how much i had to add to the beginning of soil to get its matching number
-
-    
     range_seed.append((el[1], el[1]+el[2], el[0]))
-    #print(range_seed)
 
 for el in mapping[names[1]]:
     range_soil.append((el[1], el[1]+el[2], el[0]))
