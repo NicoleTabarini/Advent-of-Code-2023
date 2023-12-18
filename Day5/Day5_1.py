@@ -63,7 +63,6 @@ for seed in seeds:
     seed = int(seed)
 
     for i in range(len(range_seed)):
-        
         if seed >= range_seed[i][0] and seed <= range_seed[i][1]:
             diff = seed - range_seed[i][0]
             seed_to_soil = range_seed[i][2] + diff
@@ -89,6 +88,7 @@ for seed in seeds:
         else:
             fertilizer_to_water = soil_to_fertilizer
     
+
     for i in range(len(range_water)):
         if fertilizer_to_water >= range_water[i][0] and fertilizer_to_water <= range_water[i][1]:
             diff = fertilizer_to_water - range_water[i][0]
@@ -96,6 +96,7 @@ for seed in seeds:
             break
         else:
             water_to_light = fertilizer_to_water
+
 
     for i in range(len(range_light)):
         if water_to_light >= range_light[i][0] and water_to_light <= range_light[i][1]:
@@ -105,6 +106,7 @@ for seed in seeds:
         else:
             light_to_temperature = water_to_light
 
+
     for i in range(len(range_temperature)):
         if light_to_temperature >= range_temperature[i][0] and light_to_temperature <= range_temperature[i][2]:
             diff = light_to_temperature - range_temperature[i][0]
@@ -112,6 +114,7 @@ for seed in seeds:
             break
         else:
             temperature_to_humidity = light_to_temperature
+
 
     for i in range(len(range_humidity)):
         if temperature_to_humidity >= range_humidity[i][0] and temperature_to_humidity <= range_humidity[i][1]:
