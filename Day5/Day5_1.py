@@ -33,6 +33,7 @@ range_humidity  = []
 humindity_to_location = set()
 
 
+
 for el in mapping[names[0]]:
     range_seed.append((el[1], el[1]+el[2], el[0]))
 
