@@ -126,17 +126,3 @@ for seed in seeds:
 
 
 print(min(humindity_to_location))
-print(humindity_to_location)
-
-
-
-# for seed in seeds:
-#     print(seed)
-#     if seed in list(seed_to_soil[1]):
-#         print("hi")
-
-
-
-
-
-
