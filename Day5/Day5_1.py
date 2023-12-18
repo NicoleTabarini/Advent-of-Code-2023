@@ -1,5 +1,3 @@
-import pandas as pd
-
 with open('Day5/input.txt', 'r') as file:
     data = file.read()
 
@@ -125,9 +123,7 @@ for seed in seeds:
             if i == len(range_humidity):
                 print('NO ADd',temperature_to_humidity)
                 humindity_to_location.add(temperature_to_humidity)
-#     #     seed_to_soil.loc[len(seed_to_soil)] = [range_soil[i], new_list2[i]]
-#     #seed_to_soil["soil"] = seed_to_soil["soil"].concat(range_soil)
-#     #seed_to_soil["seed"] = seed_to_soil["seed"].concat(range_seed)
+
 
 print(min(humindity_to_location))
 print(humindity_to_location)
