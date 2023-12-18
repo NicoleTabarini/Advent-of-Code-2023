@@ -24,7 +24,6 @@ for i, group_list in enumerate(separated_lists):
         seeds = group_list[i]
 
 
-# map seed to soil
 
 range_seed = []
 range_soil = []
@@ -34,7 +33,7 @@ range_light  =  []
 range_temperature = []
 range_humidity  = []
 humindity_to_location = set()
-#print(mapping)
+
 
 for el in mapping[names[0]]:
     range_seed.append((el[1], el[1]+el[2], el[0]))
@@ -58,8 +57,9 @@ for el in mapping[names[6]]:
     range_humidity.append((el[1], el[1]+el[2], el[0]))
 
 
-for seed in seeds:
 
+
+for seed in seeds:
     seed = int(seed)
 
     for i in range(len(range_seed)):
